@@ -24,7 +24,7 @@ RUN pip3 install --user pylint==2.4.4
 RUN pip3 install --user mypy==0.761
 RUN pip3 install --user black==19.10b0
 
-ENV PATH="/usr/local/go/bin:${PATH}"
+ENV PATH="~/.local/bin:${PATH}"
 
 COPY PythonPlugIns.vim ./
 COPY mypy.ini ./.mypy.ini
